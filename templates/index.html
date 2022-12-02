@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ na }}</title>
+	</head>
+	<body>
+		<h1>{{ na+" "+"v"+v }}</h1>
+		<br>
+		<form action="/post" method="POST">
+			<label for="text">TTS text:</label><br>
+			<input type="text" name="t" value="Test!"><br><br>
+			<input type="submit" value="Submit">
+    	</form>
+		<br>
+		<p>Warning: {{ na }} should not be used in production form; only for personal use. If you use this for Production, please fix as many bugs as possible.</p>
+		<br>
+		<h1>{{ na }} API</h1>
+		<p>POST /tts - MIME: application/json - Body: {'text':"Example"} - Returns: {'file':'(File URL).wav'} - Possible Errors: 503: Updating or editing, etc</p>
+	</body>
+</html>
